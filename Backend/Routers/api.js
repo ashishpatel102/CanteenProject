@@ -3,7 +3,7 @@ const express = require('express');
 const { getApi, setApi, orderCancel, OrderRemove } = require('../Controllers/apiHandler');
 const { getAdminApi, setAdminApi, deleteAdminApi } = require('../Controllers/apiAdminHandler');
 const { authMiddleware } = require('../Middleware/authMiddleware');
-const { Order } = require('../models/Order');
+const { Order } = require('../Models/Order');
 const { authAdminMiddleware } = require('../Middleware/authAdminMiddleware');
 const apiRouter = express.Router();
 
