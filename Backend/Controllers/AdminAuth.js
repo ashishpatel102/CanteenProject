@@ -2,7 +2,7 @@
 const argon2 = require("argon2");
 const { UserModel } = require("../Models/userModel");
 const jwt = require("jsonwebtoken");
-const { Order } = require("../models/Order");
+const { Order } = require("../Models/Order");
 
 async function adminLogin(req, res) {
     const { Username, Password } = req.body;
