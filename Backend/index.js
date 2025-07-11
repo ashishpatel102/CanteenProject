@@ -33,9 +33,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: function (origin, callBack) {
-        callBack(null, origin);
-    },
+    origin: 'https://canteenease84k.onrender.com',
     credentials: true
 }));
 
