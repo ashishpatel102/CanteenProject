@@ -1,6 +1,6 @@
 
 const jwt = require("jsonwebtoken");
-const { Order } = require("../models/Order");
+const { Order } = require("../Models/Order");
 const { Payment } = require("../Models/Pyment");
 
 
