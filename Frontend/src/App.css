@@ -1,0 +1,14 @@
+.main-container{
+    overflow: hidden;
+}
+
+
+.a{
+    color: black;
+}
+
+.a:hover{
+    color: blue;
+    cursor: pointer;
+    
+}

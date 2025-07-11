@@ -1,0 +1,154 @@
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #ff00a6, #00ff95); */
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.payment-card-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+  overflow: hidden;
+  padding: 20px;
+}
+
+.payment-card {
+  /* color: white; */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); */
+}
+
+.payment-card:hover {
+  scale: 1.01;
+}
+
+
+.checkout-container form {
+  margin-top: 10px;
+  
+  display: flex;
+  width: 100%;
+}
+
+.payment-card .input-group {
+  display: flex;
+  border-radius: 5px;
+}
+
+.payment-card input,
+.payment-card select {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  background: transparent;
+  /* color: white; */
+  border: 1px solid gold;
+  /* background: goldenrod; */
+}
+
+.payment-card input:focus,
+.payment-card select:focus {
+  
+  /* background: goldenrod; */
+  border: 1px solid gold;
+  /* color: white; */
+}
+
+/* .payment-card input::placeholder,
+.payment-card selectin::placeholder {
+  color: white;
+  } */
+  
+  .checkout-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .checkout-box h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+
+.summary-details p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #555;
+}
+
+.summary-details .total {
+  font-weight: bold;
+  font-size: 18px;
+  color: #27ae60;
+}
+
+
+.form-check-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.pay-btn {
+  background: #27ae60;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  background: #1e8449;
+}
+
+.product-box{
+  margin: auto;
+  place-items: center;
+  box-shadow: 0px 0px 10px rgb(234, 233, 233);
+  border-radius: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  
+  .checkout-container form {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+
+  .checkout-container {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .payment-card-main {
+    border-radius: 0;
+  }
+
+}
