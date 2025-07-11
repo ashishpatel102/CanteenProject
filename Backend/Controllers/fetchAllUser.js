@@ -1,5 +1,5 @@
 const { Cart } = require("../Models/Cart ");
-const { Order } = require("../models/Order");
+const { Order } = require("../Models/Order");
 const { Payment } = require("../Models/Pyment");
 const { UserModel } = require("../Models/userModel");
 
