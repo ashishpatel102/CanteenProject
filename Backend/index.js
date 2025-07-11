@@ -25,7 +25,7 @@ ConnectDB(process.env.MONGO_URI);
 
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000 
 app.use("/uploads", express.static("uploads"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -63,6 +63,6 @@ app.get('/api/admin/verify', authAdminMiddleware, (req, res) => {
 app.get('/', (req, res) => {
     res.send("<h1>Server is runing....</h1>");
 })
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
     console.log(`Server Started PORT : http://localhost:${PORT}`);
 });
