@@ -98,7 +98,7 @@ const Cart = () => {
       <h2 className="mb-4">Your Cart 🛒</h2>
 
 
-      <div className="container mt-4 p-5 bg-dark" >
+      <div className="container mt-4 p-5" >
 
 
         {loading ? (
@@ -109,7 +109,7 @@ const Cart = () => {
           distributedCartItems.map((item) => (
             <div
               key={item._id}
-              className="col OrderAll-Card"
+              className="col OrderAll-Card p-2"
               style={{ position: "relative" }}
             >
               <div
