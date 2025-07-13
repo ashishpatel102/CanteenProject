@@ -185,7 +185,7 @@ const Cart = () => {
         <div className='text-center'>
           {!eligibleForExtraDiscount && (
             <button
-              className="btn btn-outline-primary btn-sm me-2"
+              className="btn"
               onClick={() => navigate("/menu")}
             >
               Add More Items
