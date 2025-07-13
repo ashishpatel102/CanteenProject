@@ -168,7 +168,7 @@ const Cart = () => {
       </div>
 
 
-      {cartItems.length !== 0 ? <div className="d-flex justify-content-between align-items-center p-3 flex-wrap text-center">
+      {cartItems.length !== 0 ? <div className="d-flex justify-content-center align-items-center p-3 flex-wrap text-center">
         <div className='text-center'>
           <h5>Subtotal: ₹{cartTotal.toFixed(2)}</h5>
           {eligibleForExtraDiscount ? (
@@ -182,10 +182,10 @@ const Cart = () => {
           )}
         </div>
 
-        <div className='text-center'>
+        <div>
           {!eligibleForExtraDiscount && (
             <button
-              className="btn"
+              className="btn btn-success"
               onClick={() => navigate("/menu")}
             >
               Add More Items
