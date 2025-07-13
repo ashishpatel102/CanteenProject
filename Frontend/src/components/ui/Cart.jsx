@@ -169,7 +169,7 @@ const Cart = () => {
 
 
       {cartItems.length !== 0 ? <div className="d-flex justify-content-center align-items-center p-3 flex-wrap text-center">
-        <div className='text-center'>
+        <div className='text-center m-5'>
           <h5>Subtotal: ₹{cartTotal.toFixed(2)}</h5>
           {eligibleForExtraDiscount ? (
             <h4 className="text-success">
@@ -182,7 +182,7 @@ const Cart = () => {
           )}
         </div>
 
-        <div>
+        <div className='m-5'>
           {!eligibleForExtraDiscount && (
             <button
               className="btn btn-success"
@@ -191,7 +191,7 @@ const Cart = () => {
               Add More Items
             </button>
           )}
-          <button className="btn btn-success" onClick={handleBuyNow}>
+          <button className="btn btn-success m-2" onClick={handleBuyNow}>
             Place Order
           </button>
         </div>
