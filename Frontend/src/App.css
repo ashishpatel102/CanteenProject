@@ -1,0 +1,30 @@
+.main-container {
+    overflow: hidden;
+}
+
+
+.a {
+    color: black;
+}
+
+.a:hover {
+    color: blue;
+    cursor: pointer;
+
+}
+
+
+/* #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-left: 20px;
+}
