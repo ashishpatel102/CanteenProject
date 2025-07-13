@@ -87,13 +87,14 @@
 
 .dropdown {
   position: absolute;
-  bottom: -100%;
+  top: 100%;
   right: 0;
   background: white;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: none;
   width: 200px;
+  backround:red;
 }
 
 
