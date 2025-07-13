@@ -94,7 +94,6 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: none;
   width: 200px;
-  margin-top:20px;
 }
 
 
@@ -172,8 +171,9 @@
     display: flex;
     width: max-content;
     position: absolute;
-    top: 0;
+    top: 20%;
     right: 0;
+    margin-top:20px;
     white-space: nowrap;
   }
 
