@@ -25,6 +25,22 @@ ConnectDB(process.env.MONGO_URI);
 
 
 const app = express();
+
+
+
+app.use(cors({
+    // origin: 'http://localhost:5173',
+    origin: 'https://canteenease84k.onrender.com',
+    credentials: true
+}));
+
+
+app.options('*', cors({
+  origin: 'https://canteenease84k.onrender.com',
+  credentials: true
+}));
+
+
 const PORT = process.env.PORT || 3000
 app.use("/uploads", express.static("uploads"));
 app.use(express.urlencoded({ extended: false }));
@@ -32,11 +48,6 @@ app.use(express.json());
 
 app.use(cookieParser());
 
-app.use(cors({
-    // origin: 'http://localhost:5173',
-    origin: 'https://canteenease84k.onrender.com',
-    credentials: true
-}));
 
 
 app.use('/Auth', AuthRouter);
