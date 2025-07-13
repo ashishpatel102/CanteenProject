@@ -94,8 +94,8 @@ const Cart = () => {
   };
 
   return (
-    <div className="cart text-center">
-      <h2 className="mb-4">Your Cart 🛒</h2>
+    <div className="cart ">
+      <h2 className="mb-4 text-center">Your Cart 🛒</h2>
 
 
       <div className="container mt-4 p-5" >
