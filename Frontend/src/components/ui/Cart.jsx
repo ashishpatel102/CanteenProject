@@ -168,8 +168,8 @@ const Cart = () => {
       </div>
 
 
-      {cartItems.length !== 0 ? <div className="d-flex justify-content-between align-items-center p-3 flex-wrap">
-        <div>
+      {cartItems.length !== 0 ? <div className="d-flex justify-content-between align-items-center p-3 flex-wrap text-center
+        <div className='text-center'>
           <h5>Subtotal: ₹{cartTotal.toFixed(2)}</h5>
           {eligibleForExtraDiscount ? (
             <h4 className="text-success">
@@ -182,7 +182,7 @@ const Cart = () => {
           )}
         </div>
 
-        <div>
+        <div className='text-center'>
           {!eligibleForExtraDiscount && (
             <button
               className="btn btn-outline-primary btn-sm me-2"
