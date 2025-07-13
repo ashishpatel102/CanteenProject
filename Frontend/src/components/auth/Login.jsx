@@ -78,7 +78,7 @@ const Login = ({ setError, error }) => {
               placeholder="Enter username"
               onChange={FormHandler}
               name="Username"
-              value={(getFormValue.Username).trim().replace('', '_')}
+              value={(getFormValue.Username).trim().replace('', '_').toLowerCase()}
               required
             />
           </div>
