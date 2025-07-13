@@ -109,7 +109,7 @@ const Cart = () => {
           distributedCartItems.map((item) => (
             <div
               key={item._id}
-              className="col OrderAll-Card p-2"
+              className="col OrderAll-Card m-2"
               style={{ position: "relative" }}
             >
               <div
