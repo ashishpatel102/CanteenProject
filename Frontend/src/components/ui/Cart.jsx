@@ -98,7 +98,7 @@ const Cart = () => {
       <h2 className="mb-4">Your Cart 🛒</h2>
 
 
-      <div className="container mt-4 p-5 " >
+      <div className="container mt-4 p-5 gap-3" >
 
 
         {loading ? (
