@@ -87,7 +87,7 @@ const SignUp = ({ setError, error }) => {
 
         <form onSubmit={handleSignup}>
           <div className="mb-3 input-group">
-            <input type="text" name="username" placeholder="Username" className="form-control" onChange={handleChange} required />
+            <input type="text" name="username" value={(formData.username).trim().replace('', '_')} placeholder="Username" className="form-control" onChange={handleChange} required />
           </div>
           <div className="mb-3 input-group">
             <input type="email" name="email" placeholder="Email" className="form-control" onChange={handleChange} required />
